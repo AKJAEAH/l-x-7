@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARG: Bölüm 8</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <h1>Bölüm 8</h1>
+    <p>Yedinci bölümü geçtin. Buraya kadar gelmeni hiç beklemiyordum.</p>
+    <p>Soru: Mezarın başında bir kız ağlıyor. Mezarda yatanın annesi ağlayan kızın annesinin kayın validesi. Mezarda yatan, ağlayan kızın nesi olur? </p>
+    <form action="Part9.html" method="post" id="form2">
+        <label for="password">Cevabi yazin:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Next Episode">
+    </form>
+    <footer>
+        <p>Created by IMAGINE.</p>
+        <p>Copyright © 2024 IMAGINE. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("form2").onsubmit = function() {
+            event.preventDefault();
+            var password = document.getElementById("password").value;
+            if (password.toUpperCase() === "HALASI") {
+                window.location.href = "https://akjaeah.github.io/s-h-2/";
+            } else {
+                alert("Yanlış kod. Bence daha iyi düşünmelisin!");
+            }
+        };
+    </script>
+</body>
+</html>
